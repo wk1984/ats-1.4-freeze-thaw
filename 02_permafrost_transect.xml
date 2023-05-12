@@ -694,6 +694,7 @@
         <Parameter name="evaluator type" type="string" value="surface energy balance, three components" />
         <Parameter name="save diagnostic data" type="bool" value="true" />
         <Parameter name="debug cells" type="Array(int)" value="{0}" />
+        <Parameter name="wind speed reference height [m]" type="double" value="10" />
       </ParameterList>
       <ParameterList name="surface-albedos" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="subgrid albedos, three components" />
@@ -735,7 +736,6 @@
           <Parameter name="emissivity of bare ground [-]" type="double" value="0.92" />
           <Parameter name="dessicated zone thickness [m]" type="double" value="0.1" />
           <Parameter name="Clapp and Hornberger b [-]" type="double" value=" 3" />
-          <Parameter name="wind speed reference height [m]" type="double" value="10" />
         </ParameterList>
       </ParameterList>
 
@@ -747,7 +747,7 @@
       <Parameter name="times start period stop units" type="string" value="d" />
     </ParameterList>
     <ParameterList name="surface" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{ 3285, 10,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{3285, 10,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
       <Parameter name="aliased domains" type="Array(string)" value="{snow}" />
     </ParameterList>
