@@ -78,13 +78,13 @@
     </ParameterList>
     <ParameterList name="tracer patch 1" type="ParameterList">
       <ParameterList name="region: box" type="ParameterList">
-        <Parameter name="low coordinate" type="Array(double)" value="{1000.55,-1,4.3}" />
-        <Parameter name="high coordinate" type="Array(double)" value="{999.9,1,4.6}" />
+        <Parameter name="low coordinate" type="Array(double)" value="{1000.55,-1,4.0}" />
+        <Parameter name="high coordinate" type="Array(double)" value="{999.9,1,4.3}" />
       </ParameterList>
     </ParameterList>
     <ParameterList name="tracer patch 2" type="ParameterList">
       <ParameterList name="region: box" type="ParameterList">
-        <Parameter name="low coordinate" type="Array(double)" value="{1000.55,-1, 4.8}" />
+        <Parameter name="low coordinate" type="Array(double)" value="{1000.55,-1, 4.85}" />
         <Parameter name="high coordinate" type="Array(double)" value="{999.9,1,5.1}" />
       </ParameterList>
     </ParameterList>
@@ -493,8 +493,8 @@
               <Parameter name="number of dofs" type="int" value="1" />
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
-                  <Parameter name="x values" type="Array(double)" value="{ 0,86399,172801}" />
-                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.01, 0}" />
+                  <Parameter name="x values" type="Array(double)" value="{ 0,1987199,2160001}" />
+                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.1, 0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>
@@ -508,8 +508,8 @@
               <Parameter name="number of dofs" type="int" value="1" />
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
-                  <Parameter name="x values" type="Array(double)" value="{ 0,86399,172801}" />
-                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.01, 0}" />
+                  <Parameter name="x values" type="Array(double)" value="{ 0,1987199,2160001}" />
+                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.1, 0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>
@@ -967,11 +967,11 @@
   </ParameterList>
   <ParameterList name="visualization" type="ParameterList">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{140 , 5,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{140 , 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
     </ParameterList>
     <ParameterList name="surface" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{ 140, 20,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 140, 5,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
       <Parameter name="aliased domains" type="Array(string)" value="{snow}" />
     </ParameterList>
@@ -1064,7 +1064,14 @@
         </ParameterList> -->
         <ParameterList name="tcc last column" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
-          <Parameter name="functional" type="string" value="extensive integral" />
+          <Parameter name="functional" type="string" value="average" />
+          <Parameter name="region" type="string" value="BTC all" />
+          <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
+        </ParameterList>
+        <ParameterList name="water content last column" type="ParameterList">
+          <Parameter name="variable" type="string" value="water_content" />
+          <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC all" />
           <Parameter name="location name" type="string" value="cell" />
           <Parameter name="time integrated" type="bool" value="true" />
