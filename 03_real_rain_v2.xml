@@ -554,7 +554,7 @@
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
                   <Parameter name="x values" type="Array(double)" value="{ 0,1987199,2160001}" />
-                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.1, 0}" />
+                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.0005, 0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>
@@ -569,7 +569,7 @@
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
                   <Parameter name="x values" type="Array(double)" value="{ 0,1987199,2160001}" />
-                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.1, 0}" />
+                  <Parameter name="y values" type="Array(double)" value="{ 0, 0.0005, 0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>
@@ -661,7 +661,7 @@
       <ParameterList name="surface-water_content" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="overland pressure water content" />
       </ParameterList>
-      <ParameterList name="total-mols_C" type="ParameterList">
+      <ParameterList name="total_mols_C" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="multiplicative evaluator" />
         <Parameter name="dependencies" type="Array(string)" value="{total_component_concentration,water_content}" />
       </ParameterList>
@@ -1116,13 +1116,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <!-- <ParameterList name="Mols tracer" type="ParameterList">
-          <Parameter name="variable" type="string" value="total-mols_C" />
+          <Parameter name="variable" type="string" value="total_mols_C" />
           <Parameter name="region" type="string" value="BTC all" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList> -->
-        <ParameterList name="tcc last 2m" type="ParameterList">
+        <ParameterList name="tcc 2m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 2m" />
@@ -1137,12 +1137,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 2m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 2m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 4m" type="ParameterList">
+        <ParameterList name="tcc 4m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 4m" />
@@ -1157,12 +1158,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 4m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 4m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 6m" type="ParameterList">
+        <ParameterList name="tcc 6m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 6m" />
@@ -1177,12 +1179,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 6m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 6m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 8m" type="ParameterList">
+        <ParameterList name="tcc 8m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 8m" />
@@ -1197,12 +1200,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 8m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 8m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 10m" type="ParameterList">
+        <ParameterList name="tcc 10m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 10m" />
@@ -1217,12 +1221,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 10m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 10m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 12m" type="ParameterList">
+        <ParameterList name="tcc 12m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 12m" />
@@ -1237,12 +1242,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 12m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 12m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 14m" type="ParameterList">
+        <ParameterList name="tcc 14m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 14m" />
@@ -1257,12 +1263,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 14m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 14m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 16m" type="ParameterList">
+        <ParameterList name="tcc 16m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 16m" />
@@ -1277,12 +1284,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 16m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 16m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 18m" type="ParameterList">
+        <ParameterList name="tcc 18m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 18m" />
@@ -1297,12 +1305,13 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 18m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 18m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
-        <ParameterList name="tcc last 20m" type="ParameterList">
+        <ParameterList name="tcc 20m" type="ParameterList">
           <Parameter name="variable" type="string" value="total_component_concentration" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="region" type="string" value="BTC 20m" />
@@ -1317,10 +1326,11 @@
           <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="molar density liquid 20m" type="ParameterList">
-          <Parameter name="variable" type="string" value="surface-molar_density_liquid" />
+          <Parameter name="variable" type="string" value="molar_density_liquid" />
           <Parameter name="region" type="string" value="BTC 20m" />
           <Parameter name="functional" type="string" value="average" />
           <Parameter name="location name" type="string" value="cell" />
+          <Parameter name="time integrated" type="bool" value="true" />
         </ParameterList>
         <ParameterList name="surface temperature [K]" type="ParameterList">
           <Parameter name="variable" type="string" value="surface-temperature" />
