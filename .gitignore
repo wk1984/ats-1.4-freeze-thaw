@@ -7,3 +7,4 @@ log.log
 02_permafrost_transect.run
 .DS_Store
 LOGS
+.ipynb_checkpoints
