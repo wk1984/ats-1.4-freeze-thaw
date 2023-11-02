@@ -1,3 +1,8 @@
 ats_vis*
 *.xmf
 log.log
+.DS_Store
+00_freezeup.run
+01_permafrost_column.run
+02_permafrost_transect.run
+.DS_Store
