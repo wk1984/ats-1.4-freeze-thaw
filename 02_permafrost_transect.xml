@@ -13,7 +13,7 @@
       <Parameter name="mesh type" type="string" value="read mesh file" />
       <Parameter name="build columns from set" type="string" value="surface face" />
       <ParameterList name="read mesh file parameters" type="ParameterList">
-        <Parameter name="file" type="string" value="../data/endalen_3D_pf.exo" />
+        <Parameter name="file" type="string" value="../data/mesh2D.exo" />
         <Parameter name="format" type="string" value="Exodus II" />
       </ParameterList>
     </ParameterList>
@@ -37,7 +37,7 @@
     <ParameterList name="subsurface domain mineral" type="ParameterList">
       <ParameterList name="region: labeled set" type="ParameterList">
         <Parameter name="label" type="string" value="1002" />
-        <Parameter name="file" type="string" value="../data/endalen_3D_pf.exo" />
+        <Parameter name="file" type="string" value="../data/mesh2D.exo" />
         <Parameter name="format" type="string" value="Exodus II" />
         <Parameter name="entity" type="string" value="cell" />
       </ParameterList>
@@ -45,7 +45,7 @@
     <ParameterList name="surface face" type="ParameterList">
       <ParameterList name="region: labeled set" type="ParameterList">
         <Parameter name="label" type="string" value="2" />
-        <Parameter name="file" type="string" value="../data/endalen_3D_pf.exo" />
+        <Parameter name="file" type="string" value="../data/mesh2D.exo" />
         <Parameter name="format" type="string" value="Exodus II" />
         <Parameter name="entity" type="string" value="face" />
       </ParameterList>
@@ -53,7 +53,7 @@
     <ParameterList name="bottom face" type="ParameterList">
       <ParameterList name="region: labeled set" type="ParameterList">
         <Parameter name="label" type="string" value="1" />
-        <Parameter name="file" type="string" value="../data/endalen_3D_pf.exo" />
+        <Parameter name="file" type="string" value="../data/mesh2D.exo" />
         <Parameter name="format" type="string" value="Exodus II" />
         <Parameter name="entity" type="string" value="face" />
       </ParameterList>
@@ -70,8 +70,8 @@
     <!-- <Parameter name="end cycle" type="int" value="3000" /> -->
     <Parameter name="start time" type="double" value=" 0" />
     <Parameter name="start time units" type="string" value="s" />
-    <Parameter name="end time" type="double" value="10" />
-    <Parameter name="end time units" type="string" value="noleap" />
+    <Parameter name="end time" type="double" value="120" />
+    <Parameter name="end time units" type="string" value="d" />
     <ParameterList name="required times" type="ParameterList">
       <Parameter name="times start period stop" type="Array(double)" value="{ 0, 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
@@ -743,11 +743,11 @@
   </ParameterList>
   <ParameterList name="visualization" type="ParameterList">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{3285 , 1,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{0 , 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
     </ParameterList>
     <ParameterList name="surface" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{3285, 10,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{0, 10,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
       <Parameter name="aliased domains" type="Array(string)" value="{snow}" />
     </ParameterList>
