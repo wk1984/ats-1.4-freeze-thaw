@@ -17,7 +17,13 @@ it was used in a lot of spinup setups, so is kept for posterity.
 import sys,os
 import numpy as np
 import h5py
-import ats_xdmf
+
+# This is the standard path for ATS's source directory    
+try:
+    import ats_xdmf
+except ImportError:
+    sys.path.append(os.path.join(os.environ['ATS_SRC_DIR'],'tools','utils'))
+    import ats_xdmf
 
 if __name__ == "__main__":
     import argparse
