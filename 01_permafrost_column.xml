@@ -553,7 +553,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="incoming shortwave radiation [W m^-2]" />
               </ParameterList>
@@ -569,7 +569,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="air temperature [K]" />
               </ParameterList>
@@ -585,7 +585,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="vapor pressure air [Pa]" />
               </ParameterList>
@@ -601,7 +601,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="wind speed [m s^-1]" />
               </ParameterList>
@@ -617,7 +617,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="precipitation rain [m s^-1]" />
               </ParameterList>
@@ -633,7 +633,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/adventdalen_spinup_vp.h5" />
+                <Parameter name="file" type="string" value="../data/Ebo_baseline.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="precipitation snow [m SWE s^-1]" />
               </ParameterList>
@@ -713,11 +713,11 @@
   </ParameterList>
   <ParameterList name="visualization" type="ParameterList">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{3285 , 10,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{3285 , 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
     </ParameterList>
     <ParameterList name="surface" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{ 3285, 10,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{3285, 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
       <Parameter name="aliased domains" type="Array(string)" value="{snow}" />
     </ParameterList>
